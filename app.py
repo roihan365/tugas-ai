@@ -7,13 +7,13 @@ from PIL import Image
 import numpy as np
 import tensorflow as tf
 
-st.title("CNN Kelompok")
+st.title("CNN Kelompok 3")
 
 # Load model
 @st.cache_resource 
 def load_model():
     # model = tf.keras.models.load_model("model.h5")
-    model = tf.keras.models.load_model("final_cnn.keras")
+    model = tf.keras.models.load_model("final_cnn_tunned.h5")
     return model
 
 model = load_model()
@@ -44,3 +44,4 @@ if uploaded_file is not None:
 
         st.success(f"Hasil Prediksi: **{predicted_class}**")
         st.info(f"Tingkat akurasi: {confidence:.2f}")
+
