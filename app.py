@@ -7,7 +7,7 @@ from PIL import Image
 import numpy as np
 import tensorflow as tf
 
-st.title("CNN Kelompok")
+st.title("CNN Kelompok 3")
 
 # Load model
 @st.cache_resource 
@@ -44,3 +44,4 @@ if uploaded_file is not None:
 
         st.success(f"Hasil Prediksi: **{predicted_class}**")
         st.info(f"Tingkat akurasi: {confidence:.2f}")
+
